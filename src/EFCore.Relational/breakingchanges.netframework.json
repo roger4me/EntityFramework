@@ -1034,5 +1034,50 @@
     "TypeId": "public static class Microsoft.EntityFrameworkCore.RelationalQueryableExtensions",
     "MemberId": "public static System.Linq.IQueryable<T0> FromSql<T0>(this System.Linq.IQueryable<T0> source, System.String sql, params System.Object[] parameters) where T0 : class",
     "Kind": "Removal"
+  },
+  {
+    "TypeId": "public interface Microsoft.EntityFrameworkCore.Storage.IRelationalConnection : Microsoft.EntityFrameworkCore.Storage.IRelationalTransactionManager, System.IDisposable",
+    "MemberId": "Microsoft.EntityFrameworkCore.Query.Internal.IValueBufferCursor get_ActiveCursor()",
+    "Kind": "Removal"
+  },
+  {
+    "TypeId": "public interface Microsoft.EntityFrameworkCore.Storage.IRelationalConnection : Microsoft.EntityFrameworkCore.Storage.IRelationalTransactionManager, System.IDisposable",
+    "MemberId": "System.Void set_ActiveCursor(Microsoft.EntityFrameworkCore.Query.Internal.IValueBufferCursor value)",
+    "Kind": "Removal"
+  },
+  {
+    "TypeId": "public abstract class Microsoft.EntityFrameworkCore.Storage.RelationalConnection : Microsoft.EntityFrameworkCore.Storage.IRelationalConnection",
+    "MemberId": "public Microsoft.EntityFrameworkCore.Query.Internal.IValueBufferCursor get_ActiveCursor()",
+    "Kind": "Removal"
+  },
+  {
+    "TypeId": "public abstract class Microsoft.EntityFrameworkCore.Storage.RelationalConnection : Microsoft.EntityFrameworkCore.Storage.IRelationalConnection",
+    "MemberId": "public System.Void set_ActiveCursor(Microsoft.EntityFrameworkCore.Query.Internal.IValueBufferCursor value)",
+    "Kind": "Removal"
+  },
+  {
+    "TypeId": "public class Microsoft.EntityFrameworkCore.Query.RelationalQueryContext : Microsoft.EntityFrameworkCore.Query.QueryContext",
+    "MemberId": "public virtual System.Threading.SemaphoreSlim get_Semaphore()",
+    "Kind": "Removal"
+  },
+  {
+    "TypeId": "public class Microsoft.EntityFrameworkCore.Query.RelationalQueryContext : Microsoft.EntityFrameworkCore.Query.QueryContext",
+    "MemberId": "public virtual System.Void DeregisterValueBufferCursor(Microsoft.EntityFrameworkCore.Query.Internal.IValueBufferCursor valueBufferCursor)",
+    "Kind": "Removal"
+  },
+  {
+    "TypeId": "public interface Microsoft.EntityFrameworkCore.Storage.IRelationalConnection : Microsoft.EntityFrameworkCore.Storage.IRelationalTransactionManager, System.IDisposable",
+    "MemberId": "System.Threading.SemaphoreSlim get_Semaphore()",
+    "Kind": "Addition"
+  },
+  {
+    "TypeId": "public interface Microsoft.EntityFrameworkCore.Storage.IRelationalConnection : Microsoft.EntityFrameworkCore.Storage.IRelationalTransactionManager, System.IDisposable",
+    "MemberId": "System.Threading.Tasks.Task RegisterBufferableAsync(Microsoft.EntityFrameworkCore.Query.Internal.IBufferable bufferable, System.Threading.CancellationToken cancellationToken)",
+    "Kind": "Addition"
+  },
+  {
+    "TypeId": "public interface Microsoft.EntityFrameworkCore.Storage.IRelationalConnection : Microsoft.EntityFrameworkCore.Storage.IRelationalTransactionManager, System.IDisposable",
+    "MemberId": "System.Void RegisterBufferable(Microsoft.EntityFrameworkCore.Query.Internal.IBufferable bufferable)",
+    "Kind": "Addition"
   }
 ]
